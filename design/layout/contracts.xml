@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+	<!-- Since we are updating blocks on admin we must refer to our namespace we defined under admin node in etc.config -->
+	<contract_admin_adminhtml_contracts_index>
+		<reference name="head">
+			<action method="addCss">
+				<name>lehman/contracts.css</name>
+			</action>
+		</reference>
+		<reference name="content">
+			<block type="contracts/adminhtml_contract" name="contract"></block>
+		</reference>
+	</contract_admin_adminhtml_contracts_index>
+</layout>
